@@ -1,0 +1,163 @@
+<!DOCTYPE html> <!--LiHeng Zhu-->
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="website" content="text/html">
+	<title>LiHeng's Web Design Final - Dynamic Website</title>
+
+    <style>
+
+        #box
+        {
+            width: 1000px;
+            height: 600px;
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        #bar
+        {
+            width:980px;
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        #image
+        {
+	        float:left;	
+	        width:400px;
+	        height:300px;
+        }
+
+        #imagetext
+        {
+	        height:300px;
+	        padding:10px;
+        }
+
+        #bar
+        {
+	        text-align:center;
+	        word-spacing:15px;	
+        }
+
+        #image
+        {
+	        padding:10px;
+        }
+
+        #links
+        {
+	        line-height:35px;
+        }
+
+    </style>
+
+
+
+    <script>
+
+        function Pets()
+        {
+        document.getElementById("GOpets").style.display="inline-block";
+        document.getElementById("GOdog").style.display="none";
+        document.getElementById("GOcat").style.display="none";
+        document.getElementById("GOlizard").style.display="none";
+        document.getElementById("GOhamster").style.display="none";
+        }
+
+        function Dog()
+        {
+        document.getElementById("GOpets").style.display="none";
+        document.getElementById("GOdog").style.display="inline-block";
+        document.getElementById("GOcat").style.display="none";
+        document.getElementById("GOlizard").style.display="none";
+        document.getElementById("GOhamster").style.display="none";
+        }
+
+        function Cat()
+        {
+        document.getElementById("GOpets").style.display="none";
+        document.getElementById("GOdog").style.display="none";
+        document.getElementById("GOcat").style.display="inline-block";
+        document.getElementById("GOlizard").style.display="none";
+        document.getElementById("GOhamster").style.display="none";
+        }
+
+        function Lizard()
+        {
+        document.getElementById("GOpets").style.display="none";
+        document.getElementById("GOdog").style.display="none";
+        document.getElementById("GOcat").style.display="none";
+        document.getElementById("GOlizard").style.display="inline-block";
+        document.getElementById("GOhamster").style.display="none";
+        }
+
+        function Hamster()
+        {
+        document.getElementById("GOpets").style.display="none";
+        document.getElementById("GOdog").style.display="none";
+        document.getElementById("GOcat").style.display="none";
+        document.getElementById("GOlizard").style.display="none";
+        document.getElementById("GOhamster").style.display="inline-block";
+        }
+
+    </script>
+</head>
+
+<body>
+<div id = "box">
+    <div id = "bar">
+        <h2>
+        <a href="#"id = "pets" onclick="Pets()">Pets</a>
+        <a href="#" id = "dog" onclick="Dog()">Dog</a>
+        <a href="#" id = "cat" onclick="Cat()">Cat</a>
+        <a href="#" id = "lizard" onclick="Lizard()">Lizard</a>
+        <a href="#" id = "hamster" onclick="Hamster()">Hamster</a>
+        </h2>
+    </div>
+
+    <hr>    
+        <div style="display:inline-block" id="GOpets">
+            <h1>Click the other links to view other adoptable pets!</h1>
+            <img src="pets.jpg" width = "800" height="400" >
+            <h1>
+            <a href="#" onclick="Dog()"></a>
+            <a href="#" onclick="Cat()"></a>
+            <a href="#" onclick="Lizard()"></a>
+            <a href="#" onclick="Hamster()"></a>
+            </h1>
+
+</div>
+
+    <div style="display:none" id="GOpets">
+    <h3>Pets</h3>
+    <img  src="pets.jpg" width="420" height="300"><p>We all love pets</p> 
+	</div>
+
+    <div style="display:none" id="GOdog">
+        <h3>Dog</h3>
+        <img  src="dog.jpg" width="620" height="300"><p>Energetic or lazy, all dogs are a treat!</p> 
+    </div>
+
+
+    <div style="display:none" id="GOcat">
+        <h3>Cat</h3>
+        <img  src="cat.jpg" width="620" height="300"><p>Fantastic feline furballs are always so fun and feisty.</p> 
+	</div>
+
+    <div style="display:none" id="GOlizard">
+        <h3>Lizard</h3>
+        <img  src="lizard.jpg" width="620" height="300"><p>Exotic and prehistoric, lizards are awe inspiring to witness.</p> 
+    </div>
+
+
+    <div style="display:none" id="GOhamster">
+        <h3>Hamster</h3>
+        <img  src="hamster.jpg" width="620" height="300"><p>Spherical and chubby, everyone knows the hamster.</p> 
+	</div>
+
+</div>
+
+</body>
+</html>
